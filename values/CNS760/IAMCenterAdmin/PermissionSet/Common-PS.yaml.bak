@@ -1,0 +1,9 @@
+permissions:
+  - name: "All-Comm-Viewer-ComPS"
+    inline_policy: "admin_Payer1-IP-restrict.json"
+    managed_policy: 
+      - "arn:aws:iam::aws:policy/job-function/ViewOnlyAccess"
+    description: "Grants permissions to view resources and basic metadata across all AWS services."
+  - name: "All-Comm-IAMAdmin-ComPS"
+    inline_policy: "All-Comm-IAMAdmin-inline.json"
+    description: "Grants IAM Admin Access for All AWS Account"

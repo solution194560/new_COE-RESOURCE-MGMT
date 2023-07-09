@@ -1,0 +1,12 @@
+permissions:
+  - name: ps-devsecops-mgmt-pwr-c
+    managed_policy:
+      - 'arn:aws:iam::aws:policy/PowerUserAccess'
+      - 'arn:aws:iam::aws:policy/ReadOnlyAccess'
+    description: 'Grants Power User permissions to Devsecops team.'
+
+  - name: ps-cloudsecops-mgmt-pwr-c
+    managed_policy:
+      - 'arn:aws:iam::aws:policy/PowerUserAccess'
+      - 'arn:aws:iam::aws:policy/ReadOnlyAccess'
+    description: 'Grants Power User permissions to Devsecops team.'

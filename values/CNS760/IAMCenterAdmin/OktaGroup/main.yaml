@@ -1,0 +1,21 @@
+groups:
+  ## CCOE management
+  - name: aws-c760-ccoe-mgmt-admin
+    description: 'aws-c760-ccoe-mgmt-admin group'
+
+  - name: aws-c760-ccoe-test-poweruser-partners
+    description: 'aws-c760-ccoe-test-poweruser-partners group'
+
+  - name: aws-c760-ccoe-network-admin
+    description: 'aws-c760-ccoe-network-admin group'
+
+  - name: aws-c760-devsecops-mgmt-pwr
+    description: '클라우드DevSecOps팀 AWS 테스트 환경 관리 그룹'
+
+  - name: aws-c760-cloudsecops-mgmt-pwr
+    description: '클라우드DevSecOps팀 AWS GWLB 테스트 환경 관리 그룹'
+## Workload services
+#   - name : aws-c760-nucubesvcA-prd-DatabasePowerUser-PrePS
+#     description : "nucube srv-A DatabasePowerUser group"
+#   - name : aws-c760-nucubesvcA-prd-viewer
+#     description : "nucube srv-A viewer group"

@@ -1,0 +1,5 @@
+groups :
+  - name : aws-c760-nucubesvcA-prd-DatabasePowerUser-PrePS
+    description : "nucube srv-A DatabasePowerUser group"
+  - name : aws-c760-nucubesvcA-prd-viewer
+    description : "nucube srv-A viewer group"

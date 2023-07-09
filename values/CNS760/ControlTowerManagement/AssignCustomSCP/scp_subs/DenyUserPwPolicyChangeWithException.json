@@ -1,0 +1,16 @@
+{
+  "Sid": "DenyUserPwPolicyChangeWithException",
+  "Effect": "Deny",
+  "Action": [
+    "iam:DeleteAccountPasswordPolicy",
+    "iam:UpdateAccountPasswordPolicy"
+  ],
+  "Resource": "*",
+  "Condition": {
+    "StringNotLike": {
+      "aws:PrincipalArn": [
+        "arn:aws:iam::*:role/*/AWSReservedSSO_All-Comm-IAMAdmin-ComPS*"
+      ]
+    }
+  }
+}

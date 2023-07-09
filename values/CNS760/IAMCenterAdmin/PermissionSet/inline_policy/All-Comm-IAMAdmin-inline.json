@@ -1,0 +1,34 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowUserToPassRole",
+            "Effect": "Allow",
+            "Action": [
+                "iam:GetRole",
+                "iam:PassRole"
+            ],
+            "Resource": "arn:aws:iam::*:role/service-role/AccessAnalyzerMonitorServiceRole*"
+        },
+        {
+            "Sid": "AllowUserToGeneratePolicy",
+            "Effect": "Allow",
+            "Action": [
+                "access-analyzer:CancelPolicyGeneration",
+                "access-analyzer:GetGeneratedPolicy",
+                "access-analyzer:ListPolicyGenerations",
+                "access-analyzer:StartPolicyGeneration"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "AllowUserToListTrails",
+            "Effect": "Allow",
+            "Action": [
+                "CloudTrail:ListTrails"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+

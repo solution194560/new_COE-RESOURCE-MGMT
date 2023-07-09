@@ -1,0 +1,14 @@
+# 개별 OU에 Custom SCP 적용 (일괄 적용하지 않음)
+# 정책을 적용할 "OU의 ID" 및 scp json statement 조합 목록 작성
+custom_scp:
+  ou_level: specific          # [필수] 일괄 적용 대상 ou level (lv1 / lv2 / lv3 / specific)
+  use: false                  # [필수] enable 여부 (true or false)
+  array:
+    - ou_id: ou-rzme-aaaaaaaa # [필수] 적용 대상 ou id
+      json_statements:        # [필수] 개별 적용 scp json statement 목록
+        - DenyLeaveOrgz
+        - DenyUpdateCloudTrail
+    - ou_id: ou-rzme-bbbbbbbb # [필수] 적용 대상 ou id
+      json_statements:        # [필수] 개별 적용 scp json statement 목록
+        - DenyUserPwPolicyChangeWithException
+        - DenyRamShareOutsideOrgz

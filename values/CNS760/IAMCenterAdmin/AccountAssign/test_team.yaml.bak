@@ -1,0 +1,9 @@
+assigns:
+  - group: aws-c760-nucubesvcA-prd-DatabasePowerUser-PrePS
+    permissionset: DatabaseAdmin-PrePS
+    account: 
+      - "992208920121"
+  - group: aws-c760-nucubesvcA-prd-viewer
+    permissionset: Viewer-PrePS
+    account: 
+      - "992208920121"

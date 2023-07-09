@@ -1,0 +1,15 @@
+{
+  "Sid": "DenyRamShareOutsideOrgz",
+  "Effect": "Deny",
+  "Action": [
+    "ram:CreateResourceShare",
+    "ram:UpdateResourceShare",
+    "ram:AssociateResourceShare"
+  ],
+  "Resource": "*",
+  "Condition": {
+    "Bool": {
+      "ram:RequestedAllowsExternalPrincipals": "true"
+    }
+  }
+}

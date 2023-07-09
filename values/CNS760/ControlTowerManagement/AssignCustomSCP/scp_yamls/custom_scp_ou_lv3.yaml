@@ -1,0 +1,9 @@
+# OU lv3 단위로 Custom SCP 적용
+# "포함"할 OU 이름을 included_ou_names 내에 작성
+custom_scp:
+  ou_level: lv3         # [필수] 일괄 적용 대상 ou level (lv1 / lv2 / lv3 / specific)
+  use: true             # [필수] enable 여부 (true or false)
+  included_ou_names:    # [선택] 포함할 ou name 목록 (없을 시 값만 주석 처리)
+#    - workloooads_3
+  json_statements:      # [필수] 공통 적용 scp json statement 목록
+    - DenyLeaveOrgz

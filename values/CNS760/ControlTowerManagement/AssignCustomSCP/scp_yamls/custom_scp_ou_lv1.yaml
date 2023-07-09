@@ -1,0 +1,13 @@
+# OU lv1 단위로 Custom SCP 적용
+# 제외할 OU 이름을 excluded_ou_names 명시
+custom_scp:
+  ou_level: lv1         # [필수] 일괄 적용 대상 ou level (lv1 / lv2 / lv3 / specific)
+  use: true             # [필수] enable 여부 (true or false)
+  excluded_ou_names:    # [선택] 예외 미적용 대상 ou name 목록 (없을 시 값만 주석 처리)
+    - Workload
+  json_statements:      # [필수] 공통 적용 scp json statement 목록
+    - DenyLeaveOrgz
+    - DenyRamShareOutsideOrgz
+    - DenyUpdateCloudTrail
+    - DenyUserPwPolicyChangeWithException
+    - DenyDeleteSNS

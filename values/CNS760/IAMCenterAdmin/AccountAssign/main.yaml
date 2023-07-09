@@ -1,0 +1,34 @@
+assigns:
+  - group: aws-c760-ccoe-mgmt-admin
+    permissionset: AdministratorAccess
+    account:
+      - '111293500712'
+      - '883822024756'
+      - '005825609245'
+      - '992208920121'
+      - '793424749058'
+
+  - group: aws-c760-ccoe-test-poweruser-partners
+    permissionset: ps-poweruser-predef
+    account:
+      - '111293500712'
+      - '883822024756'
+      - '005825609245'
+      - '992208920121'
+
+  - group: aws-c760-ccoe-network-admin
+    permissionset: ps-networkfulladmin-predef
+    account:
+      - '793424749058'
+
+  - group: aws-c760-devsecops-mgmt-pwr
+    permissionset: ps-devsecops-mgmt-pwr-c
+    account:
+      - '164263112541'
+      - '900527812107'
+      - '549518468778'
+
+  - group: aws-c760-cloudsecops-mgmt-pwr
+    permissionset: ps-cloudsecops-mgmt-pwr-c
+    account:
+      - '549518468778'

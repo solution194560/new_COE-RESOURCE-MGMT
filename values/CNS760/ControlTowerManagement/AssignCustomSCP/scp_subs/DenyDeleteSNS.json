@@ -1,0 +1,21 @@
+{
+  "Sid": "DenyDeleteSNS",
+  "Effect": "Deny",
+  "Action": [
+    "sns:DeleteTopic"
+  ],
+  "Resource": [
+    "*"
+  ],
+  "Condition": {
+    "StringEquals": {
+      "aws:ResourceTag/managed_by": "AFT"
+    },
+    "ArnNotLike": {
+      "aws:PrincipalARN": [
+        "arn:aws:iam::*:role/AWSAFTAdmin",
+        "arn:aws:iam::*:role/AWSAFTExecution"
+      ]
+    }
+  }
+}

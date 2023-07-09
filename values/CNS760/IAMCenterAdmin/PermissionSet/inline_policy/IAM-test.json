@@ -1,0 +1,28 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+     "Effect": "Deny",
+     "Action": ["iam:CreateUser", "iam:CreateAccessKey", "iam:AddUserToGroup", "iam:CreateGroup"],
+     "Resource": ["*"]
+    },
+    {
+      "Effect": "Deny",
+      "Action": ["aws-portal:*"],
+      "Resource": ["*"]
+    },
+    {
+      "Effect": "Deny",
+      "Action": ["*"],
+      "Resource": ["*"],
+      "Condition": {
+        "NotIpAddress": {
+          "aws:SourceIp": ["15.164.58.36/32", "52.78.134.62/32"]
+        },
+        "Bool": {
+          "aws:ViaAWSService": ["false"]
+        }
+      }
+    }
+  ]
+}
