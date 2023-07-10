@@ -11,4 +11,7 @@ custom_scp:
     - DenyUpdateCloudTrail
     - DenyUserPwPolicyChangeWithException
     - DenyDeleteSNS
-    - DenyRunInstance
+    - DenyRunInstanceWithNoNmaeTag
+    - DenyRunInstanceWithNoEnvironmentTag
+    - DenyRunInstanceWithNoCostCenterTag
+
